@@ -1,5 +1,6 @@
-// Dumb C/C++ Logging
-// Original Author: Bryan DeGrendel
+// Dumb Logging
+// Author: Bryan DeGrendel
+// URL: http://github.com/sirnuke/dumb-c-logging
 //
 // This is free and unencumbered software released into the public domain.
 // 
@@ -25,6 +26,7 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 // 
 // For more information, please refer to <http://unlicense.org>
+//
 
 #ifndef ___DUMB_LOGGING_H___
 #define ___DUMB_LOGGING_H___
