@@ -92,7 +92,7 @@
 
 #ifdef __cplusplus
 #include <cstdio>
-#include <<cstdarg>
+#include <cstdarg>
 #else // __cplusplus
 #include <stdio.h>
 #include <stdarg.h>
