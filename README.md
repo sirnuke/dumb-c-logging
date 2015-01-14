@@ -31,11 +31,11 @@ file that implements a simple, very dumb logging system.
 But What Really
 ---------------
 
-It's what it says on the tin: a simple, dumb logging system for C and C++.
-It uses some preprocessor magic to make things Just Work, and wraps
-around C style printfs.  It's hopefully flexible and powerful enough
-to work well for most projects with minimal tweak, and simple enough to
-tweak the source code if needed.
+It's what it says on the tin: a simple, dumb logging system for C
+and C++.  It uses some preprocessor magic to make things Just Work,
+and wraps around C style printfs.  It's hopefully just powerful enough
+to work well for most projects with minimal tweaking, and simple enough
+to modify if needed.
 
 
 But Why
