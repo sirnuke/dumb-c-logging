@@ -1,0 +1,15 @@
+[TODO]    DumbLogging:main@8                Make this!
+[Verbose] DumbLogging:main@9                Extra noisy information like: (42)
+[Info]    DumbLogging:main@10               Norma information!
+[Warn]    DumbLogging:main@11               A warning, but probably nothing critical.  Probably
+[Error]   DumbLogging:main@12               SEGFAULT INCOMING
+[TODO]    DumbLogging:main@13               Make this!
+[Verbose] DumbLogging:main@14               Extra noisy information like: (42)
+[Info]    DumbLogging:main@15               Norma information!
+[Warn]    DumbLogging:main@16               A warning, but probably nothing critical.  Probably
+[Error]   DumbLogging:main@17               SEGFAULT INCOMING
+[TODO]    DumbLogging:main@18               Make this!
+[Verbose] DumbLogging:main@19               Extra noisy information like: (42)
+[Info]    DumbLogging:main@20               Norma information!
+[Warn]    DumbLogging:main@21               A warning, but probably nothing critical.  Probably
+[Error]   DumbLogging:main@22               SEGFAULT INCOMING

@@ -1,0 +1,5 @@
+[TODO]    DumbLogging:main@8                Make this!
+[Verbose] DumbLogging:main@9                Extra noisy information like: (42)
+[Info]    DumbLogging:main@10               Norma information!
+[Warn]    DumbLogging:main@11               A warning, but probably nothing critical.  Probably
+[Error]   DumbLogging:main@12               SEGFAULT INCOMING
