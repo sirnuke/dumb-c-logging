@@ -1,6 +1,13 @@
 #/bin/sh
 cd tests
 
+if [ -z "$CC" ] ; then
+  echo "Set \$CC to the C compiler!"
+  echo
+  echo "Try something like 'CC=gcc ./test.sh'"
+  exit 1
+fi
+
 perform_test()
 {
   echo "Running test ${1}..."
