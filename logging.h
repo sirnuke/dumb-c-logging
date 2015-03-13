@@ -116,8 +116,8 @@ static void dumb_logging_perform(const char *level, const int line,
 {
 
 #else // DUMB_LOGGING_FUNCTIONS
-static void dumb_logging(const char *level, const int line, const char *function,
-    const char *tag, const char *format, ...)
+static void dumb_logging(const char *level, const int line,
+    const char *function, const char *tag, const char *format, ...)
 {
   va_list args;
   va_start(args, format);
@@ -137,8 +137,8 @@ static void dumb_logging(const char *level, const int line, const char *function
 
 #ifdef DUMB_LOGGING_FUNCTIONS
 
-static void dumb_logging(const char *level, const int line, const char *function,
-    const char *tag, const char *format, ...)
+static void dumb_logging(const char *level, const int line,
+    const char *function, const char *tag, const char *format, ...)
 {
   va_list args;
   va_start(args, format);
