@@ -101,28 +101,28 @@
 #endif // __cplusplus
 
 #ifdef DUMB_LOGGING_FUNCTIONS
-#define DUMB_LOGGING_FUNCTION_IMPL(NAME, LEVEL) \
+#define DUMB_LOGGING_FUNCTION_IMPL(NAME, CHANNEL) \
 static void NAME(const int line, const char *function, const char *tag, \
     const char *format, ...) \
 { \
   va_list args; \
   va_start(args, format); \
-  dumb_logging_perform(LEVEL, line, function, tag, format, args); \
+  dumb_logging_perform(CHANNEL, line, function, tag, format, args); \
   va_end(args); \
 }
 
-static void dumb_logging_perform(const char *level, const int line,
+static void dumb_logging_perform(const char *channel, const int line,
     const char *function, const char *tag, const char *format, va_list args)
 {
 
 #else // DUMB_LOGGING_FUNCTIONS
-static void dumb_logging(const char *level, const int line,
+static void dumb_logging(const char *channel, const int line,
     const char *function, const char *tag, const char *format, ...)
 {
   va_list args;
   va_start(args, format);
 #endif // DUMB_LOGGING_FUNCTIONS
-  int len = fprintf(DUMB_LOGGING_STREAM, "[%s] ", level);
+  int len = fprintf(DUMB_LOGGING_STREAM, "[%s] ", channel);
   int pad = DUMB_LOGGING_TAG_PADDING - len;
   if (pad > 0) len += fprintf(DUMB_LOGGING_STREAM, "%*s", pad, " ");
   len += fprintf(DUMB_LOGGING_STREAM, "%s:%s@%i  ", tag, function, line);
@@ -137,12 +137,12 @@ static void dumb_logging(const char *level, const int line,
 
 #ifdef DUMB_LOGGING_FUNCTIONS
 
-static void dumb_logging(const char *level, const int line,
+static void dumb_logging(const char *channel, const int line,
     const char *function, const char *tag, const char *format, ...)
 {
   va_list args;
   va_start(args, format);
-  dumb_logging_perform(level, line, function, tag, format, args);
+  dumb_logging_perform(channel, line, function, tag, format, args);
   va_end(args);
 }
 
